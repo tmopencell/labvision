@@ -1,7 +1,24 @@
-This is a repo for doing some basic colout analysis with a Raspberry Pi and some extra webcams. 
+##Tutorial and Code: Image analysis with a Raspberry Pi and OpenCV. 
 
 
-How to make a cheap timelapse and webstream!
+### QUICKSTART
+
+This code takes a picture using webcam(s) and segments it into RGB using a python script. The images are then placed on a webstream. 
+
+`git clone https://github.com/tmopencell/labvision.git`
+
+`cd labvision`
+
+`ifconfig`
+
+Write down your IP adress. 
+
+`./image_segment.sh`
+
+This will take a photo (or photos) and place one in your current diretory and one in a directory for webstreaming.
+
+You may also want to set this up on your `crontab` head to Step 5 for instructions. If you want to webstream head to Step 6.
+
 
 There is no better way to automate activities than to use this £35  computer, the Raspberry Pi! Let’s talk about what this unit has and how that can be useful for those of you looking to document projects.
 
@@ -19,9 +36,10 @@ Which allows you to setup your pi in a fixed location and you can literally be a
 Chapters:
 1. Setting up onboard camera
 2. Setting up webcams
-3. Controlling an external lamp
-4. Scripting and automating
-5. Streaming to the web
+3. Python and OpenCV
+4. Controlling an external lamp
+5. Scripting and automating
+6. Streaming to the web
 
 
 #### 1. On Board Camera
@@ -77,7 +95,24 @@ Note that for multiple webcams you might want to specify which camera unit you w
 
 `fswebcam -d /dev/video_insert_video_number_ test.jpg`
 
-#### 3. Controlling an external lamp
+#### 3. Python and OpenCV
+
+It is assumed you have a basic understanding of python but if not there are great primers all over the web! One great place for raspi lovers is [Steve Computer Vision Blog](http://stevenhickson.blogspot.com/2013/04/how-to-fix-raspberry-pi-boot-problems.html).
+
+The python portion of this project involves communicating with the General Purpose Input Output (see next chapter) and the image processing. OpenCV is a very cool machin vision package with a whole range of features built in. What we want to do with our images is to process them and only look at a particular colour (i.e. One of Red/Green/Blue). 
+
+Assuming you have python alreay working you can use this line to install any missing packages:
+
+`sudo pip install __missingpackage__`
+
+You will need to run:
+
+`sudo pip install numpy`
+`sudo pip install opencv-python`
+
+You can look through the colour analysis script here: color_analysis.py and this script is based on adapting the work of [pyimage](https://www.pyimagesearch.com/2014/08/04/opencv-python-color-detection/).
+
+#### 4. Controlling an external lamp
 
 The raspi has an extremely useful feature called the “General Purpose Input/Output” GPIO board.
 
@@ -119,7 +154,7 @@ This program can then be run by typing:
 
 `python light-on.py`
 
-#### 4. Scripting and automating
+#### 5. Scripting and automating
 
 The real advantage of the pi comes to light when you realise you can tell it to do multiple things and have them run when you want! We want to have a script that creates pictures for us (while turning on a lamp), creates a .gif file out of them and then place the images online for us to view.
 
@@ -199,7 +234,7 @@ What does this mean...? The "*" refers to
 And you can read a better explanation [right here](http://www.adminschoice.com/crontab-quick-reference)!
 
 
-#### 5. Streaming to the web
+#### 6. Streaming to the web
 
 Once more the wonders of the raspi become clear! Not only is this an automation specialist but you can use it as a webserver! In fact this site (designbio.co.uk) is being run on a raspi server with [grav](https://getgrav.org/).
 
