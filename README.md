@@ -1,4 +1,4 @@
-##Tutorial and Code: Image analysis with a Raspberry Pi and OpenCV. 
+## Tutorial and Code: Image analysis with a Raspberry Pi and OpenCV. 
 
 
 ### QUICKSTART
@@ -17,8 +17,9 @@ Write down your IP adress.
 
 This will take a photo (or photos) and place one in your current diretory and one in a directory for webstreaming.
 
-You may also want to set this up on your `crontab` head to Step 5 for instructions. If you want to webstream head to Step 6.
+You may also want to set this up on your `crontab` head to [Step 5](https://github.com/tmopencell/labvision#5-scripting-and-automating) for instructions. If you want to webstream head to [Step 6](https://github.com/tmopencell/labvision#6-streaming-to-the-web).
 
+### Tutorial
 
 There is no better way to automate activities than to use this £35  computer, the Raspberry Pi! Let’s talk about what this unit has and how that can be useful for those of you looking to document projects.
 
