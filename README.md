@@ -276,17 +276,17 @@ This will produce four images on a webpage with the left being the most recent i
 <body>
 <center>
 <h1>RPi Webcamera</h1>
-<a href="http://_Your-IP-address_/cam1/timelapse.jpg">
-<img src="http://_Your-IP-address_/cam1/timelapse.jpg" alt="cam1-current" ></a>
-<a href="http://_Your-IP-address_/cam1/timelapse.gif">
-<img src="http://_Your-IP-address_/cam1/timelapse.gif" alt="cam1-timelapse" ></a>
+<a href="cam1/timelapse.jpg">
+<img src="cam1/timelapse.jpg" alt="cam1-current" ></a>
+<a href="cam1/timelapse.gif">
+<img src="cam1/timelapse.gif" alt="cam1-timelapse" ></a>
 
 <br/>
 
-<a href="http://_Your-IP-address_/cam2/timelapse.jpg">
-<img src="http://_Your-IP-address_/cam2/timelapse.jpg" alt="cam2-current" height="287.5" width="351.8" ></a>
-<a href="http://_Your-IP-address_/cam2/timelapse.gif">
-<img src="http://_Your-IP-address_/cam2/timelapse.gif" alt="cam2_timelapse" height="287.5" width="351.8" ></a>
+<a href="cam2/timelapse.jpg">
+<img src="cam2/timelapse.jpg" alt="cam2-current" height="287.5" width="351.8" ></a>
+<a href="cam2/timelapse.gif">
+<img src="cam2/timelapse.gif" alt="cam2_timelapse" height="287.5" width="351.8" ></a>
 </center>
 </body>
 </html>
