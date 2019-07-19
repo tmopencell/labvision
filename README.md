@@ -6,7 +6,7 @@ How to make a cheap timelapse and webstream!
 There is no better way to automate activities than to use this £35  computer, the Raspberry Pi! Let’s talk about what this unit has and how that can be useful for those of you looking to document projects.
 
 Note that much of this workshop is covered in far more detail on the dedicated [Raspberry Pi webpage](https://www.raspberrypi.org/documentation). Also if cost is a factor then([even cheaper products are available](https://thepihut.com/products/raspberry-pi-zero?variant=14062734980))!
-![](1-raspi_overview.png)
+![](tutorial_pics/1-raspi_overview.png)
 
 Some basics:
 
@@ -27,7 +27,7 @@ Chapters:
 #### 1. On Board Camera
 
 The first impressive feature of this board is that you can mount a camera unit called the [raspi cam](https://www.raspberrypi.org/wp-content/uploads/2013/07/RaspiCam-Documentation.pdf). It mounts directly on the board.
-![](2-raspi_cam.png)
+![](tutorial_pics/2-raspi_cam.png)
 
 This is fairly useful since a range of commands are already built in and setup is very straightforward:
 
@@ -53,7 +53,7 @@ You can also modify the lens completely and replace it, check out [this tutorial
 You can also plug in webcams directly to the pi which is especially useful if you want to look at a number of things all at once. For instance you might like to use the built in raspicam as a microscope and have 2-3 webcams looking at different angles zoomed out.
 This is very easy to setup, simply plug the webcams into the USB ports on the raspi board!
 
-![](3-raspi_webcam.png)
+![](tutorial_pics/3-raspi_webcam.png)
 
 In our case we used the Logitech c270 which worked fine but some cameras may not work. Usually you will have to reboot the pi for the cameras to be registered by the machine:
 
@@ -81,8 +81,8 @@ Note that for multiple webcams you might want to specify which camera unit you w
 
 The raspi has an extremely useful feature called the “General Purpose Input/Output” GPIO board.
 
-![](4-gpio-raspi.png)
-![](5-gpio-layout.png)
+![](tutorial_pics/4-gpio-raspi.png)
+![](tutorial_pics/5-gpio-layout.png)
 
 This is an awesome feature since you can create innumerable electronic projects! A great introduction is available [here](https://www.raspberrypi.org/documentation/usage/gpio/).
 
@@ -276,15 +276,15 @@ This will produce four images on a webpage with the left being the most recent i
 <body>
 <center>
 <h1>RPi Webcamera</h1>
-<a href="cam1/timelapse.jpg">
-<img src="cam1/timelapse.jpg" alt="cam1-current" ></a>
+<a href="cam1/2019-07-09-120844.jpg">
+<img src="cam1/2019-07-09-120844.jpg" alt="cam1-current" ></a>
 <a href="cam1/timelapse.gif">
 <img src="cam1/timelapse.gif" alt="cam1-timelapse" ></a>
 
 <br/>
 
-<a href="cam2/timelapse.jpg">
-<img src="cam2/timelapse.jpg" alt="cam2-current" height="287.5" width="351.8" ></a>
+<a href="cam2/2019-07-09-120845.jpg">
+<img src="cam2/2019-07-09-120845.jpg" alt="cam2-current" height="287.5" width="351.8" ></a>
 <a href="cam2/timelapse.gif">
 <img src="cam2/timelapse.gif" alt="cam2_timelapse" height="287.5" width="351.8" ></a>
 </center>
