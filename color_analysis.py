@@ -35,7 +35,7 @@ for (lower, upper) in boundaries:
     output_min = np.min(output)
     output_norm = (output - output_min)/(output_max - output_min)
     total_pixels = output_norm.shape[0]*output_norm.shape[1]
-    abovethreshold_pixels = (output_norm > 1).sum()
+    abovethreshold_pixels = (output_norm > 0).sum()
     norm_abovethreshold = (abovethreshold_pixels/total_pixels)*100
     print(total_pixels, abovethreshold_pixels, norm_abovethreshold )
     if norm_abovethreshold > 10:
